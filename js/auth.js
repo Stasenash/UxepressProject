@@ -13,7 +13,7 @@ const inputData = {
     global: document.querySelector(".authorization-form__field")
 }
 
-//Сообщие об ошибке
+//Сообщение об ошибке
 const INVALID_DATA = "Некорректный ввод данных, повторите попытку";
 
 //Кнопка входа
@@ -26,7 +26,7 @@ closeButton.onclick = () => {
     authPopup.style.display = "none";
 }
 
-//Поля, которые заполнены некорректно
+//Поля заполненные некорректно
 let getInvalidFields = () => {
     let data = [];
 

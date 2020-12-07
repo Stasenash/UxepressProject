@@ -416,9 +416,15 @@ input[name="r"]{
 }
 
 #img1{
-    background: url("../images/s1.svg") no-repeat;
+    background: url("../img/slider_img1.svg") no-repeat;
     background-position: bottom left;
     background-size: 470px;
+}
+
+#img2{
+    background: url("../img/slider_img2.svg") no-repeat;
+    background-position: bottom left;
+    background-size: 570px;
 }
 
 .text-top {
