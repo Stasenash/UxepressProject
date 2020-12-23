@@ -4,6 +4,7 @@ let enterButton = document.querySelector(".nav-header_right-top__login"); // К�
 let authPopup = document.querySelector(".authorization-container"); // Форма
 let closeButton = document.querySelector(".authorization-form__close"); // Закрытие формы
 let submitButton = document.querySelector(".authorization-form__submit"); // Отправка данных с формы
+let background = document.querySelector(".authorization-container"); //Все что не форма
 
 let error = document.querySelector(".authorization-form__input-error"); // Ошибка
 
@@ -24,6 +25,12 @@ enterButton.onclick = () => {
 //Закрытие формы
 closeButton.onclick = () => {
     authPopup.style.display = "none";
+}
+
+background.onmousedown = (e) => {
+    if ($(e.target).is(authPopup)){
+        authPopup.style.display = "none";
+    }
 }
 
 //Поля заполненные некорректно
