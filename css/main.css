@@ -246,6 +246,7 @@ a {
 }
 
 .authorization-form__close {
+    cursor: pointer;
     position: relative;
     left: 100%;
     top: -10%;
