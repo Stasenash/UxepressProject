@@ -37,7 +37,12 @@
     height: 40px;
 }
 
+.add-form__add-icon{
+    cursor: pointer;
+}
+
 .add-form__add-img-text {
+    cursor: pointer;
     margin-left: 10px;
     margin-bottom: 4px;
     color: #2A496B;
@@ -51,6 +56,7 @@
 }
 
 .add-form__submit {
+    cursor: pointer;
     margin-top: 6%;
     margin-bottom: 6%;
     width: 20%;
@@ -84,24 +90,10 @@
 }
 
 .add-form__upload-img {
+    cursor: pointer;
     position: absolute;
     opacity: 0;
     width: 200px;
-}
-
-.textErr {
-    margin-top: 4%;
-    color: #F44336;
-    font-style: 16px;
-    font-family: Proxima Nova Regular, sans-serif;
-}
-
-#textarInfo {
-    margin-bottom: 10px;
-    text-align: right;
-    font-size: 12px;
-    color: #D0C9D6;
-    font-family: Proxima Nova Regular, sans-serif;
 }
 
 .add-form__error {
