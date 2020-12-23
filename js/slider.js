@@ -3,7 +3,7 @@ let multiItemSlider = (function () {
     return function (selector, config) {
         let mainElement = document.querySelector(selector), // основной элемент блока
             sliderWrapper = mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
-            sliderItems = mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+            sliderItems = mainElement.querySelectorAll('.slider__item'), // элементы .slider-item
             sliderControls = mainElement.querySelectorAll('.slider__control'),
             wrapperWidth = parseFloat(getComputedStyle(sliderWrapper).width), // ширина обёртки
             itemWidth = parseFloat(getComputedStyle(sliderItems[0]).width), // ширина одного элемента
@@ -25,7 +25,7 @@ let multiItemSlider = (function () {
             }
         }
 
-        // наполнение массива _items
+        // наполнение массива items
         sliderItems.forEach(function (item, index) {
             items.push({ item: item, position: index, transform: 0 });
         });
@@ -103,7 +103,7 @@ let multiItemSlider = (function () {
         };
 
         let setUpListeners = function () {
-            // добавление к кнопкам "назад" и "вперед" обработчика _controlClick для события click
+            // добавление к кнопкам "назад" и "вперед" обработчика controlClick для события click
             sliderControls.forEach(function (item) {
                 item.addEventListener('click', controlClick);
             });
